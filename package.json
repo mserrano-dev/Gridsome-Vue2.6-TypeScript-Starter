@@ -1,0 +1,31 @@
+{
+  "name": "mserrano-user-facing",
+  "version": "1.0.0",
+  "author": "mserrano-dev",
+  "private": true,
+  "scripts": {
+    "dev": "gridsome develop",
+    "build": "gridsome build",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/source-wordpress": "^0.5.3",
+    "@vue/composition-api": "^0.6.3",
+    "gridsome": "^0.7.0",
+    "portal-vue": "^2.1.7",
+    "vue": "^2.6.11",
+    "vuetify": "^2.2.27",
+    "vuex": "^3.3.0"
+  },
+  "devDependencies": {
+    "gridsome-plugin-sass-resources-loader": "^0.0.3",
+    "gridsome-plugin-tailwindcss": "^2.2.48",
+    "gridsome-plugin-typescript": "^0.4.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "ts-loader": "^7.0.2",
+    "typescript": "^3.8.3",
+    "vue-loader": "^16.0.0-beta.1",
+    "vuetify-loader": "^1.4.3"
+  }
+}
