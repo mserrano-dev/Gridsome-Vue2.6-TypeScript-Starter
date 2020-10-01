@@ -60,9 +60,10 @@ export default function (Vue, { appOptions, router, head, isClient }) {
     return value;
   });
   Vue.filter('momentFormat', function (value, arg) {
+    let momentjs = (value === 'now') ? moment() : moment(value);
     if (arg === 'round') {
-      const month = parseInt(moment(value).format('MM'));
-      const year = parseInt(moment(value).format('YYYY'));
+      const month = parseInt(momentjs.format('MM'));
+      const year = parseInt(momentjs.format('YYYY'));
       if (month < 5) {
         return `Early ${year}`;
       } else if (month > 8) {
@@ -75,7 +76,7 @@ export default function (Vue, { appOptions, router, head, isClient }) {
       if (arg) {
         format = arg;
       }
-      return moment(value).format(format);
+      return momentjs.format(format);
     }
   });
 }
