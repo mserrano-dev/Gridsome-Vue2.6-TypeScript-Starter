@@ -1,16 +1,13 @@
 <template>
   <Layout>
-    Index Page
+    <h1>404</h1>
   </Layout>
 </template>
 
-<style>
-</style>
-
 <script>
-
 export default {
-  components: {
+  metaInfo: {
+    title: '404'
   }
-};
+}
 </script>

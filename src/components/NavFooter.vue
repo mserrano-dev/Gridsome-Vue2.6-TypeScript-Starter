@@ -1,11 +1,11 @@
 <template>
-  <v-footer app color="#006bb6" class="white--text">
-    <span>mserrano.net</span>
+  <v-footer app color="#006bb6" class="z-50 white--text">
+    <span>mserrano.dev</span>
     <v-spacer />
     <span>&copy; 2020</span>
   </v-footer>
 </template>
 
-<script lang="ts">
+<script>
 export default {};
 </script>

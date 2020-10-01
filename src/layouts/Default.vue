@@ -1,27 +1,27 @@
 <template>
   <v-app>
-    <navHeader></navHeader>
+    <NavHeader></NavHeader>
 
-    <navSidebar></navSidebar>
+    <NavSidebar></NavSidebar>
 
-    <v-content>
+    <v-main>
       <slot />
-    </v-content>
+    </v-main>
 
-    <navFooter></navFooter>
+    <NavFooter></NavFooter>
   </v-app>
 </template>
 
 <script>
-import navHeader from "../components/navHeader";
-import navSidebar from "../components/navSidebar";
-import navFooter from "../components/navFooter";
+import NavHeader from "../components/NavHeader";
+import NavSidebar from "../components/NavSidebar";
+import NavFooter from "../components/NavFooter";
 
 export default {
   components: {
-    navHeader,
-    navSidebar,
-    navFooter,
+    NavHeader,
+    NavSidebar,
+    NavFooter,
   },
 };
 </script>
